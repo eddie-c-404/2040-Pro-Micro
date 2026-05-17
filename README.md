@@ -5,7 +5,7 @@ An open source Arduino Pro Micro but with an RP2040.
 
 **Overview:**
 
-The Arduino Pro Micro is a small-form-factor, useful, and pretty cool microcontroller that's missing just one thing: some more juice!!! Unfortunately, it only runs at 16 MHz and is an 8-bit CPU. Introducing the 2040 Pro Micro, it's just like the Arduino in every single way, but it includes some more powerful components and better specs. This project originates from a problem I had a while ago. 11-year-old me had just made his finest electronics project, A flight control stick to play flight sims on his MacBook (IDK why, but I really enjoyed those back then). He had started with an Arduino Nano, and after a couple of hours of wiring and searching for how to code, he arrived at his final step: testing it. As you might be able to tell, it didn't work at all. Matter of fact, he spent more time trying to get it to work than he spent building it. He googled and googled and learned about HID, and how the ATmega 328P doesn't have that. So, unfortunately, all other solutions were out of his budget, so he moved on to blinking LEDs. Now, 3 years later, I created this to be a substitute for the heavily underpowered Arduino Pro Micro and to achieve my goal of creating a flight stick (ig).    
+The Arduino Pro Micro is a small-form-factor, useful, and pretty cool microcontroller that's missing just one thing: some more juice!!! Unfortunately, it only runs at 16 MHz and is an 8-bit CPU. Introducing the RP2040 Pro Micro, it's just like the Arduino in every single way, but it includes some more powerful components and better specs. This project originates from a problem I had a while ago. 11-year-old me had just made his finest electronics project, A flight control stick to play flight sims on his MacBook (IDK why, but I really enjoyed those back then). He had started with an Arduino Nano, and after a couple of hours of wiring and searching for how to code, he arrived at his final step: testing it. As you might be able to tell, it didn't work at all. Matter of fact, he spent more time trying to get it to work than he spent building it. He googled and googled and learned about HID, and how the ATmega 328P doesn't have that. So, unfortunately, all other solutions were out of his budget, so he moved on to blinking LEDs. Now, 3 years later, I created this to be a substitute for the heavily underpowered Arduino Pro Micro and to achieve my goal of creating a flight stick (ig).    
 
 <img width="3642" height="1937" alt="rp2040 pro micro3" src="https://github.com/user-attachments/assets/74c10366-9dfd-4371-8eae-4b9c740b0ce7" />
 
@@ -53,5 +53,12 @@ The Arduino Pro Micro is a small-form-factor, useful, and pretty cool microcontr
 | MCP1700xx    | U2               | C39051      | SOT-23        | 1.88  |
 | W25Q64JVSSIQ | U3               | C97521      | SOIC-8-208mil | 1.65  |
 | Total        | X                | X           | X             | 8.89  |
+
+**General Insruction:**
+
+If you would like to get this PCB manufactured, you can download the rp2040_pro_micro.zip file. When your pcb manufacturer asks for a gerber file, upload that.
+If you would like to copy the schematic, you can but take note that the pins labled left pins are the rigth pins and vice versa.
+The BOM file is the BOM.csv, the CPL file is positions.csv.
+If you want to use the already existing kicad files, you can use the .kicad_pro (entire proj.), the .kicad_sch (schematic), or the .kicad_pcb (the pcb).
 
 
